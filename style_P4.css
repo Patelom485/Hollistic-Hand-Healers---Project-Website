@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(image.jpg); 
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+    position: relative;
+    height: 100vh;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    min-width: 350px; 
+    max-width: 90%; 
+    height: auto;
+    min-height: 350px;
+    max-height: 90%; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 5px solid #0077ff; 
+    text-align: left;
+}
+
+.box-data {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+}
+
+h1 {
+    color: #0077ff;
+    font-weight: 700;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-group1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: rgba(226, 227, 238, 0.526);
+}
+
+.form-width {
+    width: max-content;
+}
+
+label {
+    display: block;
+    color: #0077ff; 
+    font-weight: bolder;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 6px;
+}
+
+.email-region {
+    color: #0077ff;
+    font-weight: bolder;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-label {
+    font-weight: bolder;
+    width: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.firstName,
+.lastName,
+.therapistId,
+.phoneNumber,
+.emailAddress,
+.address,
+.insurance,
+.date,
+.script,
+.injury,
+.devices,
+.clientId,
+.sessionDay,
+.sessionTime,
+.sessionId {
+    color: rgba(0, 0, 0, 0.8); 
+    font-weight: normal;
+    flex: 1;
+    width: 100px;
+    padding: 10px;
+    flex-direction: row;
+    display: inline-block;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    border: #1e2021;
+    margin: 0 auto;
+}
+
+th,
+td {
+    border: 2px solid #b9b9b9;
+    text-align: left;
+    padding: 8px;
+    background-color: #f2f2f286;
+    color: #8800ff;
+    font-weight: bolder;
+}
+
+th {
+    background-color: #f2f2f2c8;
+    text-align: center;
+}
+
+.table-container {
+    display: grid;
+    height: 100vh;
+}
+
+.password {
+    position: relative;
+    width: 475px;
+}
+
+.password-container {
+    position: relative;
+    width: 500px;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 30%;
+    left: 94%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input,
+select,
+button {
+    width: 80px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.471);
+    color: black;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    float: right;
+}
+
+.button-cl button:hover {
+    background-color: #2980b9;
+}
+
+.field-label {
+    display: block;
+    color: #0077ff; 
+    font-weight: bolder;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+#popupContent {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 30%;
+    border-radius: 4px;
+    text-align: center;
+    display: inline;
+}
+
+.close-icon {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    padding: 20px;
+    background-color: #1e82f5;
+    color: #fcfcfc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.highlight-input {
+    border: 2px solid #0077ff;
+}
+
+.error-highlight {
+    border: 2px solid red;
+}
